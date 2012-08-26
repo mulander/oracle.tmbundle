@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>query=${TM_SELECTED_TEXT:-$TM_CURRENT_WORD}
+
+. "$TM_SUPPORT_PATH/lib/webpreview.sh"
+html_header "Describe $query"
+
+NLS_LANG=AMERICAN_AMERICA.UTF8
+export NLS_LANG
+
+sqlplus -S -L /NOLOG &lt;&lt;EOF
+set define off
+whenever sqlerror exit failure rollback
+prompt &lt;pre&gt;
+connect "$ORA_USER"/"$ORA_PWD"@"$ORA_CONNECT"
+show user
+prompt &lt;/pre&gt;
+set markup html on
+desc $query
+set markup html off
+EOF
+
+echo "SQL*Plus exited."
+html_footer
+</string>
+	<key>fallbackInput</key>
+	<string>word</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>@d</string>
+	<key>name</key>
+	<string>Describe Selection or Word</string>
+	<key>output</key>
+	<string>showAsHTML</string>
+	<key>scope</key>
+	<string>source.plsql.oracle</string>
+	<key>uuid</key>
+	<string>65257C54-A07C-4764-961C-B892F28A89DF</string>
+</dict>
+</plist>

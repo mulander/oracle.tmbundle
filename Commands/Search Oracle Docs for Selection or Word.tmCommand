@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>query=${TM_SELECTED_TEXT:-$TM_CURRENT_WORD}
+
+. "$TM_SUPPORT_PATH/lib/html.sh"
+redirect "http://www.oracle.com/pls/db111/search?remark=quick_search&amp;word=$query"
+</string>
+	<key>fallbackInput</key>
+	<string>word</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>^h</string>
+	<key>name</key>
+	<string>Search Oracle Docs for Selection or Word</string>
+	<key>output</key>
+	<string>showAsHTML</string>
+	<key>scope</key>
+	<string>source.plsql.oracle</string>
+	<key>uuid</key>
+	<string>2D735CC6-DF05-4725-A4FD-08DE33AAD9E4</string>
+</dict>
+</plist>

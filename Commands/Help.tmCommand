@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>. "$TM_SUPPORT_PATH/lib/webpreview.sh"
+html_header "Oracle PL/SQL Bundle Help" "Oracle"
+
+Markdown.pl &lt;&lt;'EOF'
+# Help for the Oracle PL/SQL Bundle
+
+## Search Oracle Docs for Selection or Word
+
+The _Search Oracle Docs for Selection or Word_ command searches for the selected text or current word in the Oracle online documentation.
+
+## Run Script
+
+The _Run Script_ command takes the current file and runs it using SQL*Plus.
+
+## Run Selection or Line
+
+The _Run Selection or Line_ command takes the selected text or current line and submits it as a query using SQL*Plus.
+
+## Describe Selection or Word
+
+The _Describe Selection or Word_ command takes the selected text or current word and submits a describe command to SQL*Plus.
+
+## Open SQL*Plus
+
+The _Open SQL*Plus_ command opens up SQL*Plus in the project folder and logs in using the username, password and connectstring supplied as environment variables. Useful for running "interactive" SQL-scripts.
+
+## Find Procedure
+
+The _Find Procedure_ command will search for a procedure or function in a package body with the name of the current word.  If it is found, the file containing it is shown and the cursor moves to the start of the procedure or function.
+
+### Environment Variables
+
+The commands assumes the following environment variables are properly set:
+
+* `$ORA_USER`    - schema/username e.g. SCOTT
+* `$ORA_PWD `    - password, e.g. TIGER
+* `$ORA_CONNECT` - connect string, e.g. localhost:1521/ORCL
+
+These variables may be set in the parent shell of TextMate, global variables in TextMate preferences, or as project local variables.
+
+The commands all assume UTF-8 formatted files.
+
+## Extras
+
+### Importing a File
+
+You can import the contents of another file into the currently open file by dragging
+it into the window.  The contents will appear at the place you release it.
+
+### Tab Triggers
+
+There are a number of "tab triggers" defined which will insert useful code snippets into the current file.  Look at the Oracle menu to see what these are and how to activate them.
+
+EOF
+
+html_footer
+</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>^H</string>
+	<key>name</key>
+	<string>Help</string>
+	<key>output</key>
+	<string>showAsHTML</string>
+	<key>scope</key>
+	<string>source.plsql.oracle</string>
+	<key>uuid</key>
+	<string>69B47504-F6E5-44BB-A758-51DB35270B9C</string>
+</dict>
+</plist>
