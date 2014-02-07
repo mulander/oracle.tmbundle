@@ -105,11 +105,21 @@
 				<key>2</key>
 				<dict>
 					<key>name</key>
+					<string>keyword.other.oracle</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.oracle</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
 					<string>entity.name.function.oracle</string>
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(?i)^\s*(function|procedure)\s+([-a-z0-9_]+)</string>
+			<string>(?i)^\s*(OVERRIDING)?\s*(MEMBER|CONSTRUCTOR|STATIC)?\s*(function|procedure)\s+([-a-z0-9_]+)</string>
 			<key>name</key>
 			<string>meta.procedure.oracle</string>
 		</dict>
@@ -133,7 +143,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(if|elsif|else|end\s+if|loop|end\s+loop|for|case|end\s+case|continue|return|goto)\b</string>
+			<string>(?i)\b(references|foreign|primary|key|check|constraint|if|elsif|else|end\s+if|loop|end\s+loop|for|case|end\s+case|continue|return|goto)\b</string>
 			<key>name</key>
 			<string>keyword.control.oracle</string>
 		</dict>
@@ -163,7 +173,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(p(i|o|io)_[-a-z0-9_]+)\b</string>
+			<string>(?i)\b(p(i|o|io|n|ar|v)_[-a-z0-9_]+)\b</string>
 			<key>name</key>
 			<string>variable.parameter.oracle</string>
 		</dict>
@@ -175,13 +185,13 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(end|then|deterministic|exception|when|others|subtype|constant|range|binary_integer|declare|begin|in|out|is|as|exit|open|fetch|into|close|type|rowtype|default|\.(extend|count|first|last|next|nextval|currval))\b</string>
+			<string>(?i)\b(end|then|deterministic|exception|when|others|subtype|constant|range|binary_integer|declare|begin|in|out|is|as|exit|raise|cursor|record|open|fetch|into|close|type|rowtype|default|\.(extend|count|first|last|next|nextval|currval))\b</string>
 			<key>name</key>
 			<string>keyword.other.oracle</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(select|from|where|order\s+by|group\s+by|asc|desc|update|set|insert|into|values|delete|from|distinct|union|having|limit|table|of)\b</string>
+			<string>(?i)\b(select|from|where|order\s+by|group\s+by|asc|desc|update|set|insert|into|values|returning|delete|from|distinct|union|having|limit|table|of)\b</string>
 			<key>name</key>
 			<string>keyword.other.sql.oracle</string>
 		</dict>
