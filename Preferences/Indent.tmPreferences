@@ -12,6 +12,15 @@
 		<string>(?i)^\s*(is|as|begin|end|then|else|elsif|exception)\b</string>
 		<key>increaseIndentPattern</key>
 		<string>(?i)^\s*(is|as|begin|if|then|else|elsif|loop|exception)\b</string>
+		<key>shellVariables</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>TM_COMMENT_START</string>
+				<key>value</key>
+				<string>-- </string>
+			</dict>
+		</array>
 	</dict>
 	<key>uuid</key>
 	<string>6A30BCDD-20CB-4E24-A1DC-5187E6AA36A6</string>
