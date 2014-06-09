@@ -126,6 +126,30 @@
 			<string>meta.procedure.oracle</string>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.oracle</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.oracle</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.oracle</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(?i)^\s*(end)\s+(loop|if)?([-a-z0-9_]+)?\s*\;</string>
+			<key>name</key>
+			<string>meta.procedure.oracle</string>
+		</dict>
+		<dict>
 			<key>match</key>
 			<string>[!&lt;&gt;:]?=|&lt;&gt;|&lt;|&gt;|\+|(?&lt;!\.)\*|-|(?&lt;!^)/|\|\|</string>
 			<key>name</key>
@@ -187,7 +211,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(end|then|deterministic|exception|when|others|subtype|constant|range|binary_integer|declare|begin|in|out|is|as|exit|raise|cursor|record|open|fetch|into|close|type|rowtype|default|\.(extend|count|first|last|next|nextval|currval))\b</string>
+			<string>(?i)\b(end|then|deterministic|exception|when|others|subtype|constant|range|binary_integer|declare|begin|in|out|is|as|exit|raise|cursor|record|open|fetch|into|close|%type|%rowtype|default|\.(extend|count|first|last|next|nextval|currval))\b</string>
 			<key>name</key>
 			<string>keyword.other.oracle</string>
 		</dict>
