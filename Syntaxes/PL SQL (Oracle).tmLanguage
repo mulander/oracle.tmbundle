@@ -7,6 +7,8 @@
 		<string>sql</string>
 		<string>ddl</string>
 		<string>dml</string>
+		<string>pks</string>
+		<string>pkb</string>
 	</array>
 	<key>foldingStartMarker</key>
 	<string>(?i)^\s*(begin|if|loop)\b</string>
@@ -225,7 +227,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(number|integer|varchar2|boolean|date)\b</string>
+			<string>(?i)\b(varchar2|nvarchar2|number|float|long|date|binary_float|binary_double|timestamp|interval|raw|long\s+raw|rowid|urowid|char|nchar|clob|nclob|blob|bfile|boolean|pls_integer|binary_integer|natural|naturaln|positive|positiven|signtype|simple_integer)\b</string>
 			<key>name</key>
 			<string>storage.type.oracle</string>
 		</dict>
