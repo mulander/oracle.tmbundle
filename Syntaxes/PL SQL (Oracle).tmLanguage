@@ -198,16 +198,43 @@
 			<string>keyword.other.sql.oracle</string>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>support.class.oracle</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>support.function.oracle</string>
+				</dict>
+			</dict>
 			<key>match</key>
-			<string>(?i)\b(dbms_lock|dbms_output)\b</string>
+			<string>(?i)\b(dbms_output\.)(disable|enable|get_line|get_lines|new_line|put|put_line
+)\b</string>
 			<key>name</key>
 			<string>support.class.oracle</string>
 		</dict>
-		<dict>
+				<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>support.class.oracle</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>support.function.oracle</string>
+				</dict>
+			</dict>
 			<key>match</key>
-			<string>(?i)\b(put_line)\b</string>
+			<string>(?i)\b(dbms_lock\.)(allocate_unique|convert|release|request|sleep)\b</string>
 			<key>name</key>
-			<string>support.function.oracle</string>
+			<string>support.class.oracle</string>
 		</dict>
 		<dict>
 			<key>begin</key>
