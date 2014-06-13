@@ -198,16 +198,157 @@
 			<string>keyword.other.sql.oracle</string>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>support.class.oracle</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>support.function.oracle</string>
+				</dict>
+			</dict>
 			<key>match</key>
-			<string>(?i)\b(dbms_lock|dbms_output)\b</string>
+			<string>(?i)\b(dbms_debug\.)(attach_session|continue|debug_off|debug_on|delete_breakpoint|delete_oer_breakpoint|detach_session|disable_breakpoint|enable_breakpoint|execute|get_indexes|get_more_source|get_line_map|get_runtime_info|get_timeout_behaviour|get_value|initialize|ping|print_backtrace|print_instantiations|probe_version|self_check|set_breakpoint|set_oer_breakpoint|set_timeout|set_timeout_behaviour|set_value|show_breakpoints|show_frame_source|show_source|synchronize|target_program_running)\b</string>
 			<key>name</key>
 			<string>support.class.oracle</string>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>support.class.oracle</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>support.function.oracle</string>
+				</dict>
+			</dict>
 			<key>match</key>
-			<string>(?i)\b(put_line)\b</string>
+			<string>(?i)\b(dbms_job\.)(broken|change|instance|interval|next_date|remove|run|submit|user_export|what)\b</string>
 			<key>name</key>
-			<string>support.function.oracle</string>
+			<string>support.class.oracle</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>support.class.oracle</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>support.function.oracle</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(?i)\b(dbms_lob\.)(append|close|compare|converttoblob|converttoclob|copy|copy_dbfs_link|copy_from_dbfs_link|createtemporary|dbfs_link_generate_path|erase|fileclose|filecloseall|fileexists|filegetname|fileisopen|fileopen|fragment_delete|fragment_insert|fragment_move|fragment_replace|freetemporary|get_dbfs_link|get_dbfs_link_state|getchunksize|getcontenttype|getlength|getoptions |get_storage_limit|instr|isopen|issecurefile|istemporary|loadblobfromfile|loadclobfromfile|loadfromfile|move_to_dbfs_link|open|read|set_dbfs_link|setcontenttype|setoptions|substr|trim|write|writeappend)\b</string>
+			<key>name</key>
+			<string>support.class.oracle</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>support.class.oracle</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>support.function.oracle</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(?i)\b(dbms_lock\.)(allocate_unique|convert|release|request|sleep)\b</string>
+			<key>name</key>
+			<string>support.class.oracle</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>support.class.oracle</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>support.function.oracle</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(?i)\b(dbms_output\.)(disable|enable|get_line|get_lines|new_line|put|put_line
+)\b</string>
+			<key>name</key>
+			<string>support.class.oracle</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>support.class.oracle</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>support.function.oracle</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(?i)\b(dbms_scheduler\.)(add_event_queue_subscriber|add_group_member|add_job_email_notification|alter_chain|alter_running_chain|close_window|copy_job|create_chain|create_credential|create_database_destination|create_event_schedule|create_file_watcher|create_group|create_job|create_job_class|create_jobs|create_program|create_schedule|create_window|define_anydata_argument|define_chain_event_step|define_chain_step|define_chain_rule|define_chain_step|define_metadata_argument|define_program_argument|disable|drop_agent_destination|drop_chain|drop_chain_rule|drop_chain_step|drop_credential|drop_database_destination|drop_file_watcher|drop_group|drop_job|drop_job_class|drop_program||drop_program_argument|drop_schedule|drop_window|enable|end_detached_job_run|evaluate_calendar_string|evaluate_running_chain|generate_job_name|get_agent_info|get_agent_version|get_attribute|get_file|get_scheduler_attribute|open_window|purge_log|put_file|remove_event_queue_subscriber|remove_group_member|remove_job_email_notification|reset_job_argument_value|run_chain|run_job|set_agent_registration_pass|set_attribute|set_attribute_null|set_job_anydata_value|set_job_argument_value|set_job_attributes|set_resource_constraint|set_scheduler_attribute|stop_job)\b</string>
+			<key>name</key>
+			<string>support.class.oracle</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>support.class.oracle</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>support.function.oracle</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(?i)\b(dbms_utility\.)(active_instances|analyze_database|analyze_part_object|analyze_schema|canonicalize|comma_to_table|compile_schema|create_alter_type_error_table|current_instance|data_block_address_block|data_block_address_file|db_version|exec_ddl_statement|expand_sql_text|format_call_stack|format_error_backtrace|format_error_stack|get_cpu_time|get_dependency|get_endianness|get_hash_value|get_parameter_value|get_sql_hash|get_time|get_tz_transitions|invalidate|is_bit_set|is_cluster_database|make_data_block_address|name_resolve|name_tokenize|old_current_schema|old_current_user|port_string|sqlid_to_sqlhash|table_to_comma|validate|wait_on_pending_dml)\b</string>
+			<key>name</key>
+			<string>support.class.oracle</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>support.class.oracle</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>support.function.oracle</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(?i)\b(utl_file\.)(fclose|fclose_all|fcopy|fflush|fgetattr|fgetpos|fopen|fopen_nchar|fremove|frename|fseek|get_line|get_line_nchar|get_raw|is_open|new_line|put|put_line|put_line_nchar|put_nchar|putf|putf_nchar|put_raw)\b</string>
+			<key>name</key>
+			<string>support.class.oracle</string>
 		</dict>
 		<dict>
 			<key>begin</key>
