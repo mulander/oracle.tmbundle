@@ -169,6 +169,12 @@
 		</dict>
 		<dict>
 			<key>match</key>
+			<string>(?i)\b(avg|cluster_details|cluster_distance|cluster_id|cluster_probability|cluster_set|collect|corr|corr_k|corr_s|count|covar_pop|covar_samp|cube_table|cume_dist|cv|dataobj_to_partition|dense_rank|deref|feature_details|feature_id|feature_set|feature_value|first|first_value|group_id|grouping|grouping_id|iteration_number|lag|last|last_value|lead|listagg|make_ref|max|median|min|nth_value|ntile|percent_rank|percentile_cont|percentile_disc|prediction|prediction_cost|prediction_details|prediction_probability|prediction_set|presentnnv|presentv|previous|rank|ratio_to_report|ref|reftohex|regr_avgx|regr_avgy|regr_count|regr_intercept|regr_r2|regr_slope|regr_sxx|regr_sxy|regr_syy|row_number|stats_binomial_test|stats_crosstab|stats_f_test|stats_ks_test|stats_mode|stats_mw_test|stats_one_way_anova|stats_t_test_one|stats_t_test_paired|stats_t_test_indep|stats_t_test_indepu|stats_wsr_test|stddev|stddev_pop|stddev_samp|sum|sys_xmlagg|value|var_pop|var_samp|variance|xmlagg)\b</string>
+			<key>name</key>
+			<string>support.function.sqlbuiltin.oracle</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>(?i)\b(sql|sqlcode)\b</string>
 			<key>name</key>
 			<string>variable.language.oracle</string>
