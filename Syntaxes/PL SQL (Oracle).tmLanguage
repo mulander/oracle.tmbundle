@@ -163,9 +163,15 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(avg|count|sum|max|min|nvl|trim|to_date|to_char|lpad|ltrim|rpad|rtrim|trunc|to_number)\b</string>
+			<string>(?i)\b(abs|acos|add_months|appendchildxml|ascii|asciistr|asin|atan|atan2|bfilename|bin_to_num|bitand|cardinality|cast|ceil|chartorowid|chr|cluster_details|cluster_distance|cluster_id|cluster_probability|cluster_set|coalesce|collect|compose|con_dbid_to_id|con_guid_to_id|con_name_to_id|con_uid_to_id|concat|convert|cos|cosh|current_date|current_timestamp|dbtimezone|decode|decompose|deletexml|depth|dump|empty_blob|empty_clob|existsnode|exp|extract|extract|extractvalue|feature_details|feature_id|feature_set|feature_value|floor|from_tz|greatest|hextoraw|initcap|insertchildxml|insertchildxmlafter|insertchildxmlbefore|insertxmlafter|insertxmlbefore|instr|last_day|least|length|ln|lnnvl|localtimestamp|log|lower|lpad|ltrim|mod|months_between|nanvl|nanvl|nchr|new_time|next_day|nls_charset_decl_len|nls_charset_id|nls_charset_name|nls_initcap|nls_lower|nls_upper|nlssort|nullif|numtodsinterval|numtodsinterval|numtoyminterval|numtoyminterval|nvl|nvl2|ora_dst_affected|ora_dst_convert|ora_dst_error|ora_hash|ora_invoking_user|ora_invoking_userid|path|power|powermultiset|powermultiset_by_cardinality|prediction|prediction_bounds|prediction_cost|prediction_details|prediction_probability|prediction_set|rawtohex|rawtonhex|regexp_count|regexp_instr|regexp_replace|regexp_substr|remainder|replace|round|rowidtochar|rowidtonchar|rpad|rtrim|scn_to_timestamp|sessiontimezone|set|sign|sin|sinh|soundex|sqrt|standard_hash|substr|sys_connect_by_path|sys_context|sys_dburigen|sys_extract_utc|sys_guid|sys_typeid|sys_xmlagg|sys_xmlgen|sysdate|systimestamp|tan|tanh|timestamp_to_scn|to_binary_double|to_binary_float|to_blob|to_char|to_char|to_clob|to_date|to_dsinterval|to_dsinterval|to_lob|to_multi_byte|to_nchar|to_nclob|to_number|to_single_byte|to_timestamp|to_timestamp_tz|to_yminterval|translate|using|treat|trim|trunc|tz_offset|uid|unistr|updatexml|upper|user|userenv|vsize|width_bucket|xmlagg|xmlcast|xmlcdata|xmlcolattval|xmlcomment|xmlconcat|xmldiff|xmlelement|xmlexists|xmlforest|xmlisvalid|xmlparse|xmlpatch|xmlpi|xmlquery|xmlroot|xmlsequence|xmlserialize|xmltable|xmltransform)\b</string>
 			<key>name</key>
-			<string>support.function.builtin.oracle</string>
+			<string>support.function.sqlbuiltin.oracle</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?i)\b(avg|cluster_details|cluster_distance|cluster_id|cluster_probability|cluster_set|collect|corr|corr_k|corr_s|count|covar_pop|covar_samp|cube_table|cume_dist|cv|dataobj_to_partition|dense_rank|deref|feature_details|feature_id|feature_set|feature_value|first|first_value|group_id|grouping|grouping_id|iteration_number|lag|last|last_value|lead|listagg|make_ref|max|median|min|nth_value|ntile|percent_rank|percentile_cont|percentile_disc|prediction|prediction_cost|prediction_details|prediction_probability|prediction_set|presentnnv|presentv|previous|rank|ratio_to_report|ref|reftohex|regr_avgx|regr_avgy|regr_count|regr_intercept|regr_r2|regr_slope|regr_sxx|regr_sxy|regr_syy|row_number|stats_binomial_test|stats_crosstab|stats_f_test|stats_ks_test|stats_mode|stats_mw_test|stats_one_way_anova|stats_t_test_one|stats_t_test_paired|stats_t_test_indep|stats_t_test_indepu|stats_wsr_test|stddev|stddev_pop|stddev_samp|sum|sys_xmlagg|value|var_pop|var_samp|variance|xmlagg)\b</string>
+			<key>name</key>
+			<string>support.function.sqlbuiltin.oracle</string>
 		</dict>
 		<dict>
 			<key>match</key>
