@@ -187,13 +187,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(p_[-a-z0-9_]+)\b</string>
-			<key>name</key>
-			<string>variable.parameter.oracle</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(?i)\b((l|v)_[-a-z0-9_]+)\b</string>
+			<string>(?i)\b(l_[-a-z0-9_]+)\b</string>
 			<key>name</key>
 			<string>variable.other.oracle</string>
 		</dict>
