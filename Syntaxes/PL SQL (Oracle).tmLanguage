@@ -145,7 +145,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(references|foreign|primary|key|check|constraint|if|elsif|else|end\s+if|loop|end\s+loop|for|case|end\s+case|continue|return|goto)\b</string>
+			<string>(?i)\b(references|foreign|primary|key|check|constraint|if|elsif|else|end\s+if|loop|while|end\s+loop|for|case|end\s+case|continue|return|goto)\b</string>
 			<key>name</key>
 			<string>keyword.control.oracle</string>
 		</dict>
@@ -163,7 +163,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(abs|acos|add_months|appendchildxml|ascii|asciistr|asin|atan|atan2|bfilename|bin_to_num|bitand|cardinality|cast|ceil|chartorowid|chr|cluster_details|cluster_distance|cluster_id|cluster_probability|cluster_set|coalesce|collect|compose|con_dbid_to_id|con_guid_to_id|con_name_to_id|con_uid_to_id|concat|convert|cos|cosh|current_date|current_timestamp|dbtimezone|decode|decompose|deletexml|depth|dump|empty_blob|empty_clob|existsnode|exp|extract|extract|extractvalue|feature_details|feature_id|feature_set|feature_value|floor|from_tz|greatest|hextoraw|initcap|insertchildxml|insertchildxmlafter|insertchildxmlbefore|insertxmlafter|insertxmlbefore|instr|last_day|least|length|ln|lnnvl|localtimestamp|log|lower|lpad|ltrim|mod|months_between|nanvl|nanvl|nchr|new_time|next_day|nls_charset_decl_len|nls_charset_id|nls_charset_name|nls_initcap|nls_lower|nls_upper|nlssort|nullif|numtodsinterval|numtodsinterval|numtoyminterval|numtoyminterval|nvl|nvl2|ora_dst_affected|ora_dst_convert|ora_dst_error|ora_hash|ora_invoking_user|ora_invoking_userid|path|power|powermultiset|powermultiset_by_cardinality|prediction|prediction_bounds|prediction_cost|prediction_details|prediction_probability|prediction_set|rawtohex|rawtonhex|regexp_count|regexp_instr|regexp_replace|regexp_substr|remainder|replace|round|rowidtochar|rowidtonchar|rpad|rtrim|scn_to_timestamp|sessiontimezone|set|sign|sin|sinh|soundex|sqrt|standard_hash|substr|sys_connect_by_path|sys_context|sys_dburigen|sys_extract_utc|sys_guid|sys_typeid|sys_xmlagg|sys_xmlgen|sysdate|systimestamp|tan|tanh|timestamp_to_scn|to_binary_double|to_binary_float|to_blob|to_char|to_char|to_clob|to_date|to_dsinterval|to_dsinterval|to_lob|to_multi_byte|to_nchar|to_nclob|to_number|to_single_byte|to_timestamp|to_timestamp_tz|to_yminterval|translate|using|treat|trim|trunc|tz_offset|uid|unistr|updatexml|upper|user|userenv|vsize|width_bucket|xmlagg|xmlcast|xmlcdata|xmlcolattval|xmlcomment|xmlconcat|xmldiff|xmlelement|xmlexists|xmlforest|xmlisvalid|xmlparse|xmlpatch|xmlpi|xmlquery|xmlroot|xmlsequence|xmlserialize|xmltable|xmltransform)\b</string>
+			<string>(?i)\b(abs|acos|add_months|appendchildxml|ascii|asciistr|asin|atan|atan2|bfilename|bin_to_num|bitand|cardinality|cast|ceil|chartorowid|chr|cluster_details|cluster_distance|cluster_id|cluster_probability|cluster_set|coalesce|collect|compose|con_dbid_to_id|con_guid_to_id|con_name_to_id|con_uid_to_id|concat|convert|cos|cosh|current_date|current_timestamp|dbtimezone|decode|decompose|deletexml|depth|dump|empty_blob|empty_clob|existsnode|exp|extract|extract|extractvalue|feature_details|feature_id|feature_set|feature_value|floor|from_tz|greatest|hextoraw|initcap|insertchildxml|insertchildxmlafter|insertchildxmlbefore|insertxmlafter|insertxmlbefore|instr|last_day|least|length|ln|lnnvl|localtimestamp|log|lower|lpad|ltrim|mod|months_between|nanvl|nanvl|nchr|new_time|next_day|nls_charset_decl_len|nls_charset_id|nls_charset_name|nls_initcap|nls_lower|nls_upper|nlssort|nullif|numtodsinterval|numtodsinterval|numtoyminterval|numtoyminterval|nvl|nvl2|ora_dst_affected|ora_dst_convert|ora_dst_error|ora_hash|ora_invoking_user|ora_invoking_userid|path|power|powermultiset|powermultiset_by_cardinality|prediction|prediction_bounds|prediction_cost|prediction_details|prediction_probability|prediction_set|rawtohex|rawtonhex|regexp_count|regexp_instr|regexp_replace|regexp_substr|remainder|replace|round|rowidtochar|rowidtonchar|rpad|rtrim|scn_to_timestamp|sessiontimezone|set|sign|sin|sinh|soundex|sqrt|standard_hash|substr|sys_connect_by_path|sys_context|sys_dburigen|sys_extract_utc|sys_guid|sys_typeid|sys_xmlagg|sys_xmlgen|sysdate|systimestamp|tan|tanh|timestamp_to_scn|to_binary_double|to_binary_float|to_blob|to_char|to_char|to_clob|to_date|to_dsinterval|to_dsinterval|to_lob|to_multi_byte|to_nchar|to_nclob|to_number|to_single_byte|to_timestamp|to_timestamp_tz|to_yminterval|translate|using|treat|trim|trunc|tz_offset|uid|unistr|updatexml|upper|user|userenv|vsize|width_bucket|xmlagg|xmlcast|xmlcdata|xmlcolattval|xmlcomment|xmlconcat|xmldiff|xmlelement|xmlexists|xmlforest|xmlisvalid|xmlparse|xmlpatch|xmlpi|xmlquery|xmlroot|xmlsequence|xmlserialize|xmltable|xmltransform|exception_init|raise_application_error)\b</string>
 			<key>name</key>
 			<string>support.function.sqlbuiltin.oracle</string>
 		</dict>
@@ -193,13 +193,13 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(end|then|deterministic|exception|when|others|subtype|constant|range|binary_integer|declare|begin|in|out|is|as|exit|raise|cursor|record|open|fetch|into|close|type|rowtype|default|\.(extend|count|first|last|next|nextval|currval))\b</string>
+			<string>(?i)\b(end|then|deterministic|exception|when|exists|others|subtype|constant|range|binary_integer|declare|begin|in|out|to|is|as|exit|raise|cursor|record|open|fetch|into|close|type|rowtype|execute|comment|column|synonym|sequence|start\s+with|increment\s+by|cache|pragma|grant|start|default|\.(extend|count|first|last|next|nextval|currval|reverse))\b</string>
 			<key>name</key>
 			<string>keyword.other.oracle</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(select|from|where|order\s+by|group\s+by|asc|desc|update|set|insert|into|values|returning|delete|from|distinct|union|having|limit|table|of)\b</string>
+			<string>(?i)\b(select|from|inner\s+join|left\s+join|left\s+outer\s+join|right\s+join|right\s+outer|join|full\s+join|full\s+outer\s+join|on|where|order\s+by|group\s+by|asc|desc|update|set|insert|into|values|returning|delete|from|distinct|union|having|limit|table|of|drop)\b</string>
 			<key>name</key>
 			<string>keyword.other.sql.oracle</string>
 		</dict>
@@ -355,6 +355,120 @@
 			<key>name</key>
 			<string>support.class.oracle</string>
 		</dict>
+		    <dict>
+      <key>captures</key>
+      <dict>
+        <key>1</key>
+        <dict>
+          <key>name</key>
+          <string>support.class.oracle</string>
+        </dict>
+        <key>2</key>
+        <dict>
+          <key>name</key>
+          <string>support.function.oracle</string>
+        </dict>
+      </dict>
+      <key>match</key>
+      <string>(?i)\b(dbms_crypto\.)(decrypt|encrypt|hash|mac|randombytes|randominteger|randomnumber)\b</string>
+      <key>name</key>
+      <string>support.class.oracle</string>
+    </dict>
+    <dict>
+      <key>captures</key>
+      <dict>
+        <key>1</key>
+        <dict>
+          <key>name</key>
+          <string>support.class.oracle</string>
+        </dict>
+        <key>2</key>
+        <dict>
+          <key>name</key>
+          <string>support.function.oracle</string>
+        </dict>
+      </dict>
+      <key>match</key>
+      <string>(?i)\b(utl_raw\.)(bit_and|bit_complement|bit_or|bit_xor|cast_from_binary_double|cast_from_binary_float|cast_from_binary_integer|cast_from_number|cast_to_binary_double|cast_to_binary_float|cast_to_binary_integer|cast_to_number|cast_to_raw|cast_to_varchar2|cast_to_nvarchar2|compare|concat|convert|copies|length|overlay|reverse|substr|translate|transliterate|xrange)\b</string>
+      <key>name</key>
+      <string>support.class.oracle</string>
+    </dict>
+    <dict>
+      <key>captures</key>
+      <dict>
+        <key>1</key>
+        <dict>
+          <key>name</key>
+          <string>support.class.oracle</string>
+        </dict>
+        <key>2</key>
+        <dict>
+          <key>name</key>
+          <string>support.function.oracle</string>
+        </dict>
+      </dict>
+      <key>match</key>
+      <string>(?i)\b(utl_i18n\.)(escape_reference|get_common_time_zones|get_default_charset|get_default_iso_currency|get_default_linguistic_sort|get_local_languages|get_local_linguistic_sorts|get_local_territories|get_local_time_zones|get_translation|map_charset|map_from_short_language|map_language_from_iso|map_locale_to_iso|map_territory_from_iso|map_to_short_language|raw_to_char|raw_to_nchar|string_to_raw|transliterate|unescape_reference)\b</string>
+      <key>name</key>
+      <string>support.class.oracle</string>
+    </dict>
+    <dict>
+      <key>captures</key>
+      <dict>
+        <key>1</key>
+        <dict>
+          <key>name</key>
+          <string>support.class.oracle</string>
+        </dict>
+        <key>2</key>
+        <dict>
+          <key>name</key>
+          <string>support.function.oracle</string>
+        </dict>
+      </dict>
+      <key>match</key>
+      <string>(?i)\b(utl_encode\.)(base64_decode|base64_encode|mimeheader_decode|mimeheader_encode|quoted_printable_decode|quoted_printable_encode|text_decode|text_encode|uudecode|uuencode)\b</string>
+      <key>name</key>
+      <string>support.class.oracle</string>
+    </dict>
+    <dict>
+      <key>captures</key>
+      <dict>
+        <key>1</key>
+        <dict>
+          <key>name</key>
+          <string>support.class.oracle</string>
+        </dict>
+        <key>2</key>
+        <dict>
+          <key>name</key>
+          <string>support.function.oracle</string>
+        </dict>
+      </dict>
+      <key>match</key>
+      <string>(?i)\b(owa_util\.)(bind_variables|calendarprint|cellsprint|choose_date|get_cgi_env|get_owa_service_path|get_procedure|http_header_close|listprint|mime_header|print_cgi_env|redirect_url|showpage|showsource|signature|status_line|tableprint|todate|who_called_me)\b</string>
+      <key>name</key>
+      <string>support.class.oracle</string>
+    </dict>
+    <dict>
+      <key>captures</key>
+      <dict>
+        <key>1</key>
+        <dict>
+          <key>name</key>
+          <string>support.class.oracle</string>
+        </dict>
+        <key>2</key>
+        <dict>
+          <key>name</key>
+          <string>support.function.oracle</string>
+        </dict>
+      </dict>
+      <key>match</key>
+      <string>(?i)\b(htp\.)(address|anchor|anchor2|appletclose|appletopen|area|base|basefont|bgsound|big|blockquoteclose|blockquoteopen|bodyclose|bodyopen|bold|br|center|centerclose|centeropen|cite|code|comment|dfn|dirlistclose|dirlistopen|div|dlistclose|dlistdef|dlistopen|dlistterm|em|emphasis|escape_sc|fontclose|fontopen|formcheckbox|formclose|formopen|formfile|formhidden|formimage|formpassword|formradio|formreset|formselectclose|formselectopen|formselectoption|formsubmit|formtext|formtextarea|formtextarea2|formtextareaclose|formtextareaopen|formtextareaopen2|frame|framesetclose|framesetopen|headclose|header|headopen|hr|htmlclose|htmlopen|img|img2|isindex|italic|kbd|keyboard|line|linkrel|linkrev|listheader|listingclose|listingopen|listitem|mailto|mapclose|mapopen|menulistclose|menulistopen|meta|nl|nobr|noframesclose|noframesopen|olistclose|olistopen|para|paragraph|param|plaintext|preclose|preopen|print|p|prints|prn|ps|s|sample|script|small|strike|strong|style|sub|sup|tablecaption|tableclose|tabledata|tableheader|tableopen|tablerowclose|tablerowopen|teletype|title|ulistclose|ulistopen|underline|variable|wbr)\b</string>
+      <key>name</key>
+      <string>support.class.oracle</string>
+    </dict>
 		<dict>
 			<key>begin</key>
 			<string>'</string>
@@ -373,7 +487,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(varchar2|nvarchar2|number|float|long|date|binary_float|binary_double|timestamp|interval|raw|long\s+raw|rowid|urowid|char|nchar|clob|nclob|blob|bfile|boolean|pls_integer|binary_integer|natural|naturaln|positive|positiven|signtype|simple_integer)\b</string>
+			<string>(?i)\b(varchar2|nvarchar2|number|integer|float|long|date|binary_float|binary_double|timestamp|interval|raw|long\s+raw|rowid|urowid|char|nchar|clob|nclob|blob|bfile|boolean|pls_integer|binary_integer|natural|naturaln|positive|positiven|signtype|simple_integer)\b</string>
 			<key>name</key>
 			<string>storage.type.oracle</string>
 		</dict>
