@@ -193,8 +193,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(new|old)\b</string>
-			<!--<string>(?i)\b(:new|:old)\b</string>-->
+			<string>(?i):\b(new|old)\b</string>
 			<key>name</key>
 			<string>variable.trigger.oracle</string>
 		</dict>
