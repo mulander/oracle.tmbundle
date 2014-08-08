@@ -130,7 +130,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(?i)\b(type)\s+(\S+)</string>
+			<string>(?i)\b(type)\s+"([^"]+)"</string>
 			<key>name</key>
 			<string>meta.type.oracle</string>
 		</dict>
