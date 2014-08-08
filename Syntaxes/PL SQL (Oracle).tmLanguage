@@ -78,6 +78,44 @@
 			<string>meta.package.oracle</string>
 		</dict>
 		<dict>
+      <key>captures</key>
+      <dict>
+        <key>1</key>
+        <dict>
+          <key>name</key>
+          <string>keyword.other.oracle</string>
+        </dict>
+        <key>2</key>
+        <dict>
+          <key>name</key>
+          <string>entity.name.type.oracle</string>
+        </dict>
+      </dict>
+      <key>match</key>
+      <string>(?i)\b(trigger)\s+(\S+)</string>
+      <key>name</key>
+      <string>meta.trigger.oracle</string>
+    </dict>
+    <dict>
+      <key>captures</key>
+      <dict>
+        <key>1</key>
+        <dict>
+          <key>name</key>
+          <string>keyword.other.oracle</string>
+        </dict>
+        <key>2</key>
+        <dict>
+          <key>name</key>
+          <string>entity.name.type.oracle</string>
+        </dict>
+      </dict>
+      <key>match</key>
+      <string>(?i)\b(view)\s+(\S+)</string>
+      <key>name</key>
+      <string>meta.view.oracle</string>
+    </dict>
+		<dict>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
@@ -92,7 +130,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(?i)\b(type)\s+"([^"]+)"</string>
+			<string>(?i)\b(type)\s+(\S+)</string>
 			<key>name</key>
 			<string>meta.type.oracle</string>
 		</dict>
@@ -169,7 +207,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(avg|cluster_details|cluster_distance|cluster_id|cluster_probability|cluster_set|collect|corr|corr_k|corr_s|count|covar_pop|covar_samp|cube_table|cume_dist|cv|dataobj_to_partition|dense_rank|deref|feature_details|feature_id|feature_set|feature_value|first|first_value|group_id|grouping|grouping_id|iteration_number|lag|last|last_value|lead|listagg|make_ref|max|median|min|nth_value|ntile|percent_rank|percentile_cont|percentile_disc|prediction|prediction_cost|prediction_details|prediction_probability|prediction_set|presentnnv|presentv|previous|rank|ratio_to_report|ref|reftohex|regr_avgx|regr_avgy|regr_count|regr_intercept|regr_r2|regr_slope|regr_sxx|regr_sxy|regr_syy|row_number|stats_binomial_test|stats_crosstab|stats_f_test|stats_ks_test|stats_mode|stats_mw_test|stats_one_way_anova|stats_t_test_one|stats_t_test_paired|stats_t_test_indep|stats_t_test_indepu|stats_wsr_test|stddev|stddev_pop|stddev_samp|sum|sys_xmlagg|value|var_pop|var_samp|variance|xmlagg)\b</string>
+			<string>(?i)\b(avg|cluster_details|cluster_distance|cluster_id|cluster_probability|cluster_set|collect|corr|corr_k|corr_s|count|covar_pop|covar_samp|cube_table|cume_dist|cv|dataobj_to_partition|dense_rank|deref|feature_details|feature_id|feature_set|feature_value|first|first_value|group_id|grouping|grouping_id|iteration_number|lag|last|last_value|lead|listagg|make_ref|max|median|min|nth_value|ntile|percent_rank|percentile_cont|percentile_disc|prediction|prediction_cost|prediction_details|prediction_probability|prediction_set|presentnnv|presentv|previous|rank|ratio_to_report|ref|reftohex|regr_avgx|regr_avgy|regr_count|regr_intercept|regr_r2|regr_slope|regr_sxx|regr_sxy|regr_syy|row_number|stats_binomial_test|stats_crosstab|stats_f_test|stats_ks_test|stats_mode|stats_mw_test|stats_one_way_anova|stats_t_test_one|stats_t_test_paired|stats_t_test_indep|stats_t_test_indepu|stats_wsr_test|stddev|stddev_pop|stddev_samp|sum|sys_xmlagg|value|var_pop|var_samp|variance|xmlagg|inserting|deleting|updating)\b</string>
 			<key>name</key>
 			<string>support.function.sqlbuiltin.oracle</string>
 		</dict>
@@ -199,13 +237,13 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(end|then|deterministic|exception|when|exists|others|subtype|constant|range|binary_integer|declare|begin|in|out|to|is|as|exit|raise|cursor|record|open|fetch|into|close|type|rowtype|execute|comment|column|synonym|sequence|start\s+with|increment\s+by|cache|pragma|grant|start|alter|database|datafile|autoextend|after|before|each|row|default|\.(extend|count|first|last|next|nextval|currval|reverse))\b</string>
+			<string>(?i)\b(end|then|deterministic|exception|when|exists|others|subtype|constant|range|declare|begin|in|out|to|is|as|exit|raise|cursor|record|open|fetch|into|close|%type|%rowtype|execute|comment|column|synonym|sequence|index\s+by|start\s+with|increment\s+by|cache|pragma|grant|start|alter|database|datafile|autoextend|trigger|after|before|each|row|default|\.(extend|count|first|last|next|nextval|currval|reverse))\b</string>
 			<key>name</key>
 			<string>keyword.other.oracle</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(select|from|inner\s+join|left\s+join|left\s+outer\s+join|right\s+join|right\s+outer|join|full\s+join|full\s+outer\s+join|on|where|order\s+by|group\s+by|asc|desc|update|set|insert|into|values|returning|delete|from|distinct|union|having|limit|table|of|drop|between)\b</string>
+			<string>(?i)\b(select|from|inner\s+join|left\s+join|left\s+outer\s+join|right\s+join|right\s+outer|join|full\s+join|full\s+outer\s+join|on|off|where|order\s+by|group\s+by|asc|desc|update|set|insert|into|values|returning|delete|from|distinct|union|having|limit|table|of|drop|between)\b</string>
 			<key>name</key>
 			<string>keyword.other.sql.oracle</string>
 		</dict>
