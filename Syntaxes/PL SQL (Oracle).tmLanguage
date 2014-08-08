@@ -78,6 +78,44 @@
 			<string>meta.package.oracle</string>
 		</dict>
 		<dict>
+      <key>captures</key>
+      <dict>
+        <key>1</key>
+        <dict>
+          <key>name</key>
+          <string>keyword.other.oracle</string>
+        </dict>
+        <key>2</key>
+        <dict>
+          <key>name</key>
+          <string>entity.name.type.oracle</string>
+        </dict>
+      </dict>
+      <key>match</key>
+      <string>(?i)\b(trigger)\s+(\S+)</string>
+      <key>name</key>
+      <string>meta.trigger.oracle</string>
+    </dict>
+    <dict>
+      <key>captures</key>
+      <dict>
+        <key>1</key>
+        <dict>
+          <key>name</key>
+          <string>keyword.other.oracle</string>
+        </dict>
+        <key>2</key>
+        <dict>
+          <key>name</key>
+          <string>entity.name.type.oracle</string>
+        </dict>
+      </dict>
+      <key>match</key>
+      <string>(?i)\b(view)\s+(\S+)</string>
+      <key>name</key>
+      <string>meta.view.oracle</string>
+    </dict>
+		<dict>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
@@ -92,7 +130,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(?i)\b(type)\s+"([^"]+)"</string>
+			<string>(?i)\b(type)\s+(\S+)</string>
 			<key>name</key>
 			<string>meta.type.oracle</string>
 		</dict>
